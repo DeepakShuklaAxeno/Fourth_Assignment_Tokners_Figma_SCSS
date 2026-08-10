@@ -1,0 +1,157 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0b1e;
+    color: #ffffff;
+}
+
+header {
+    background-color: #0d0b1e;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #2a2745;
+}
+
+header .logo {
+    width: 150px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #cfc9f5;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.auth-buttons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 18px;
+    border-radius: 25px;
+    background-color: #7b3fe4;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 34px;
+    background: linear-gradient(90deg, #a86bff, #6f5bff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+h3 {
+    font-size: 20px;
+    color: #e3e0ff;
+}
+
+h4 {
+    font-size: 18px;
+    color: #b19dff;
+}
+
+p {
+    max-width: 700px;
+    margin: 10px auto;
+    line-height: 1.6;
+    color: #cfcaf0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #7b3fe4, #5a2fd9);
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.hero {
+    background-color: #14112b;
+}
+
+.creators, .holders, .different, .about {
+    border-top: 1px solid #2a2745;
+}
+
+.creators, .about {
+    background-color: #14112b;
+}
+
+.roadmap ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px auto 30px auto;
+}
+
+.roadmap li {
+    margin: 5px 0;
+    color: #cfcaf0;
+}
+
+.phases {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.phase {
+    border: 1px solid #3a3560;
+    background-color: #171335;
+    border-radius: 15px;
+    padding: 25px;
+    width: 250px;
+}
+
+.howtobuy .step {
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: #171335;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+footer {
+    background-color: #0d0b1e;
+    text-align: center;
+    padding: 30px 20px;
+    border-top: 1px solid #2a2745;
+}
+
+footer nav {
+    margin-bottom: 20px;
+}
+
+footer nav a {
+    color: #cfc9f5;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.socials img {
+    width: 30px;
+    margin: 0 5px;
+}
