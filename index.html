@@ -3,200 +3,244 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tokners</title>
+    <title>Tokners - Reimagining Social Media via Blockchain</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<img class="bg-gradient-image" src="./assets/Frame45.png" alt="">
+
+<img class="bg-gradient-image" src="./assets/Frame45.png" alt="" aria-hidden="true">
+
 <header class="header">
     <div class="wrap header-row">
-        <a href="#" class="logo">
-            <img src="assets/logo_colored_sign_black_text.svg" alt="">
+        <a href="#" class="logo" aria-label="Tokners Home">
+            <img src="assets/logo_colored_sign_black_text.svg" alt="Tokners Logo">
         </a>
-        <nav class="nav">
-            <a href="#">Our team</a>
-            <a href="#">Tokens</a>
-            <a href="#">Connect wallet</a>
-            <a href="#">LightPaper</a>
+        <nav class="nav" aria-label="Main Navigation">
+            <ul>
+                <li><a href="#team">Our team</a></li>
+                <li><a href="#tokens">Tokens</a></li>
+                <li><a href="#wallet">Connect wallet</a></li>
+                <li><a href="#lightpaper">LightPaper</a></li>
+            </ul>
         </nav>
         <div class="signin-signup">
             <a href="#" class="link-plain">Sign in</a>
             <a href="#" class="btn btn-outline signup">Sign Up</a>
         </div>
-        
     </div>
 </header>
 
-<section class="hero">
-    <div class="wrap hero-row">
-        <div class="hero-text hero-div">
-            <p class="eyebrow">At Tokners we are</p>
-            <h1>Reimagining social media through the power of the blockchain.</h1>
-            <p class="muted">We are creating social media 3.0 with influencers, celebrities and creators being able to launch their own digital currency by simply creating a profile with media content posted as Nonfungible Tokens that can be owned and traded on the Tknrs network.</p>
-            <button class="learn-more">Learn More</button>
+<main>
+    <section class="hero" aria-labelledby="hero-heading">
+        <div class="wrap hero-row">
+            <div class="hero-text hero-div">
+                <p class="eyebrow">At Tokners we are</p>
+                <h1 id="hero-heading">Reimagining social media through the power of the blockchain.</h1>
+                <p class="muted">
+                    We are creating social media 3.0 with influencers, celebrities and creators being able to launch their own digital currency by simply creating a profile with media content posted as Nonfungible Tokens that can be owned and traded on the Tknrs network.
+                </p>
+                <a href="#different" class="btn learn-more">Learn More</a>
+            </div>
+            <div class="hero-phone-img">
+                <img src="assets/2phones.png" alt="Tokners mobile application preview showing profile feeds and token trading interfaces on smartphones">
+            </div>
         </div>
-        <div class="hero-phone-img">
-            <img src="assets/2phones.png" alt="Tokners app in a mobile ui">
-        </div>
-    </div>
-</section>
+    </section>
 
-<section class="cards">
-    <div class="wrap cards-grid">
-        <div class="grid-item-1"><img src="./assets/Group31.png" alt="Colourful rectangular visual background element with one curved edge."></div>
-        <div class="grid-item-2"><img src="./assets/Group32.png" alt="White rectangular curved background visual element with text."></div>
-    </div>
-</section>
-
-<section class="different">
-    <div class="different-row">
-        <div class="curved-colorful">
-            <img src="assets/curv-logo.png" alt="">
+    <section class="cards" aria-label="Target Audience Features">
+        <div class="wrap cards-grid">
+            <div class="grid-item-1">
+                <img src="./assets/Group31.png" alt="Information for Creators detailing social media monetization features">
+            </div>
+            <div class="grid-item-2">
+                <img src="./assets/Group32.png" alt="Information for Token Holders detailing investment and reward opportunities">
+            </div>
         </div>
-        <div class="white-text-curve">
-            <img src="assets/WhiteCurvWithText.png" alt="">
-        </div>
-    </div>
+    </section>
 
-    <div class="roadmap">
-        <div class="side-white-corner"><img src="assets/side-white-corner.png" alt=""></div>
-        <div class="wrap roadmap-grid">
-            <div class="card">
-                <div class="road-head"><span class="badge badge-green">Q1</span><span class="muted">2021</span></div>
+    <section id="different" class="different" aria-labelledby="different-heading">
+        <div class="different-row">
+            <div class="curved-colorful" aria-hidden="true">
+                <img src="assets/curv-logo.png" alt="">
+            </div>
+            <div class="white-text-curve">
+                <img src="assets/WhiteCurvWithText.png" alt="What makes us different? Overview of creator platform benefits and holder economics.">
+            </div>
+        </div>
+
+        <div class="roadmap" aria-labelledby="roadmap-heading">
+            <h2 id="different-heading" class="sr-only">Platform Highlights and Roadmap</h2>
+            <div class="side-white-corner" aria-hidden="true">
+                <img src="assets/side-white-corner.png" alt="">
+            </div>
+
+            <div class="wrap roadmap-grid">
+                <article class="card">
+                    <div class="road-head">
+                        <span class="badge badge-green">Q1</span>
+                        <span class="muted"><time datetime="2021">2021</time></span>
+                    </div>
+                    <ul class="roadmap-list">
+                        <li><span class="text-green" aria-hidden="true">01</span> Team set-up</li>
+                        <li><span class="text-green" aria-hidden="true">02</span> Launch of international website</li>
+                    </ul>
+                </article>
+
+                <article class="road-item card">
+                    <div class="road-head">
+                        <span class="badge badge-blue">Q2</span>
+                        <span class="muted"><time datetime="2021">2021</time></span>
+                    </div>
+                    <ul class="roadmap-list">
+                        <li><span class="text-blue" aria-hidden="true">01</span> Presale and exchange listings</li>
+                        <li><span class="text-blue" aria-hidden="true">02</span> Blockchain development and launch</li>
+                        <li><span class="text-blue" aria-hidden="true">03</span> Launch of our MVP</li>
+                        <li><span class="text-blue" aria-hidden="true">04</span> Influencer agency partnerships</li>
+                        <li><span class="text-blue" aria-hidden="true">05</span> Marketing and promotion</li>
+                    </ul>
+                </article>
+
+                <article class="road-item card">
+                    <div class="road-head">
+                        <span class="badge badge-yellow">Q3</span>
+                        <span class="muted"><time datetime="2021">2021</time></span>
+                    </div>
+                    <ul class="roadmap-list">
+                        <li><span class="text-yellow" aria-hidden="true">01</span> Celebrity, Creator and Influencer partnerships</li>
+                        <li><span class="text-yellow" aria-hidden="true">02</span> Expansion of creator communities on our platform</li>
+                        <li><span class="text-yellow" aria-hidden="true">03</span> More marketing and promotion</li>
+                    </ul>
+                </article>
+
+                <article class="road-item card">
+                    <div class="road-head">
+                        <span class="badge badge-red">Q4</span>
+                        <span class="muted"><time datetime="2021">2021</time></span>
+                    </div>
+                    <ul class="roadmap-list">
+                        <li><span class="text-red" aria-hidden="true">01</span> Mainstream partnerships</li>
+                        <li><span class="text-red" aria-hidden="true">02</span> 500 active creator communities</li>
+                        <li><span class="text-red" aria-hidden="true">03</span> 2 million active community members</li>
+                        <li><span class="text-red" aria-hidden="true">04</span> More marketing and promotion</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="coming" aria-labelledby="coming-heading">
+        <div class="wrap coming-row">
+            <div class="coming-panel">
+                <h2 id="coming-heading">
+                    <img src="assets/logo_colored_sign_black_text.svg" alt="Tokners" class="inline-logo"> is coming
+                </h2>
+                <p class="muted">Cryptocurrency adoption is at less than 1% of the global world population with some countries and entities actively fighting against its mass adoption and the smartest developers and nerds holding the fort.</p>
+                <p class="muted">Bitcoin was the first, and it has since grown to thousands of tokens launched all aiming to fix one problem or the other with some quite simply FOMOing the moment. Our goal is to bring mass adoption to the cryptocurrency space by dumbing it down. How far down? So down that even a celebrity can explain it in simple words to their followers and have them download an app, buy into the social currency of their favourite person and watch their investment as is with other cryptocurrency project.</p>
+                <p class="muted"><strong>A new digital economy is coming.</strong> People would be just as powerful as countries and creators would be paid beyond the peanuts that conventional social media platforms can offer.</p>
+                <p class="muted">There would be new markets and advertisers with little to offer would not find home there. Like Kanye said,</p>
+                <blockquote class="quote">
+                    "Personalities would become the new currency, and services would be built on top of them".
+                </blockquote>
+                <p class="muted">Well, Kanye didn't exactly say that, but it sounds like something we hope he would say.</p>
+                <p class="muted">Currency is digital, it has been that way for a while now, but this time there would be no dead presidents on the money, there would people like you on the money, and you would own it because it would make the most sense in the world.</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+            <div class="coming-img">
+                <img src="assets/Woman-Holding-iPhone-Xs-in-Hand.png" alt="Hand holding a smartphone displaying creator profiles in the Tokners app">
+            </div>
+        </div>
+    </section>
+
+    <section class="presale" aria-labelledby="presale-heading">
+        <div class="wavy-mask-logo" aria-hidden="true">
+            <img src="assets/maskLogoGroup1.png" alt="">
+        </div>
+
+        <div class="wrap presale-cards">
+            <h2 id="presale-heading" class="center">Presale Details</h2>
+            <div class="phase-grid">
+                <article class="phase article-1">
+                    <span class="badge badge-green">01</span>
+                    <h3>Phase One</h3>
+                    <p class="muted-dark"><time datetime="2021-04-01">01/04/2021</time> - <time datetime="2021-04-16">16/04/2021</time></p>
+                    <p class="rate">1 BNB = 100,000 WNTR</p>
+                    <p class="muted-dark">Soft cap: 5,000 BNB</p>
+                    <p class="muted-dark">Hard cap: 10,000 BNB</p>
+                </article>
+
+                <article class="phase article-2">
+                    <span class="badge badge-blue">02</span>
+                    <h3>Phase Two</h3>
+                    <p class="muted-dark"><time datetime="2021-04-17">17/04/2021</time> - <time datetime="2021-04-30">30/04/2021</time></p>
+                    <p class="rate">1 BNB = 100,000 WNTR</p>
+                    <p class="muted-dark">Soft cap: 5,000 BNB</p>
+                    <p class="muted-dark">Hard cap: 10,000 BNB</p>
+                </article>
+
+                <article class="phase article-3">
+                    <span class="badge badge-yellow">03</span>
+                    <h3>Phase Three</h3>
+                    <p class="muted-dark"><time datetime="2021-05-01">01/05/2021</time> - <time datetime="2021-05-15">15/05/2021</time></p>
+                    <p class="rate">1 BNB = 100,000 WNTR</p>
+                    <p class="muted-dark">Soft cap: 5,000 BNB</p>
+                    <p class="muted-dark">Hard cap: 10,000 BNB</p>
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
+
+<div class="footer-gradient-wrapper">
+    <img class="bg-footer-gradient" src="./assets/bottomSectionBackgroundGradient.png" alt="" aria-hidden="true">
+
+    <section class="howtobuy" aria-labelledby="howtobuy-heading">
+        <div class="wrap howtobuy-cards">
+            <h2 id="howtobuy-heading" class="center">How to buy</h2>
+            <ol class="steps-grid">
+                <li class="step">
+                    <span class="muted" aria-hidden="true">01</span>
+                    <p>First Connect your Metamask or TrustWallet to the "Connect Wallet" on the Homepage.</p>
+                </li>
+                <li class="arrow" aria-hidden="true">&rarr;</li>
+                <li class="step">
+                    <span class="muted" aria-hidden="true">02</span>
+                    <p>Then send minimum of 0.1 BNB or maximum of 10 BNB to the Presale wallet.</p>
+                </li>
+                <li class="arrow" aria-hidden="true">&rarr;</li>
+                <li class="step">
+                    <span class="muted" aria-hidden="true">03</span>
+                    <p>Then after you will receive your $WNTR to your address within 24hours.</p>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="wrap">
+            <nav class="footer-nav" aria-label="Footer Navigation">
                 <ul>
-                    <li><span class="text-green">01</span> Team set-up</li>
-                    <li><span class="text-green">02</span> Launch of international website</li>
+                    <li><a href="#team">Our team</a></li>
+                    <li><a href="#tokens">Tokens</a></li>
+                    <li><a href="#wallet">Connect wallet</a></li>
+                    <li><a href="#lightpaper">Lightpaper</a></li>
                 </ul>
-            </div>
-            <div class="road-item card">
-                <div class="road-head"><span class="badge badge-blue">Q2</span><span class="muted">2021</span></div>
-                <ul>
-                    <li><span class="text-blue">01</span> Presale and exchange listings</li>
-                    <li><span class="text-blue">02</span> Blockchain development and launch</li>
-                    <li><span class="text-blue">03</span> Launch of our MVP</li>
-                    <li><span class="text-blue">04</span> Influencer agency partnerships</li>
-                    <li><span class="text-blue">05</span> Marketing and promotion</li>
+            </nav>
+            <div class="footer-bottom">
+                <a href="#" class="logo" aria-label="Tokners Home">
+                    <img src="assets/logo_colored_sign_black_text.svg" alt="Tokners Logo">
+                </a>
+                <ul class="socials">
+                    <li><a href="https://twitter.com" aria-label="Follow Tokners on Twitter"><img src="assets/twitterLogo.png" alt=""></a></li>
+                    <li><a href="https://t.me" aria-label="Join Tokners Telegram Group"><img src="assets/telegramLogo.png" alt=""></a></li>
+                    <li><a href="https://www.instagram.com" aria-label="Follow Tokners on Instagram"><img src="assets/instagramLogo.png" alt=""></a></li>
+                    <li><a href="https://github.com" aria-label="View Tokners GitHub repository"><img src="assets/github.png" alt=""></a></li>
+                    <li><a href="https://www.reddit.com" aria-label="Join Tokners Reddit community"><img src="assets/redditLogo.png" alt=""></a></li>
                 </ul>
-            </div>
-            <div class="road-item card">
-                <div class="road-head"><span class="badge badge-yellow">Q3</span><span class="muted">2021</span></div>
-                <ul>
-                    <li><span class="text-yellow">01</span> Celebrity, Creator and Influencer partnerships</li>
-                    <li><span class="text-yellow">02</span> Expansion of creator communities on our platform</li>
-                    <li><span class="text-yellow">03</span> More marketing and promotion</li>
-                </ul>
-            </div>
-            <div class="road-item card">
-                <div class="road-head"><span class="badge badge-red">Q4</span><span class="muted">2021</span></div>
-                <ul>
-                    <li><span class="text-red">01</span> Mainstream partnerships</li>
-                    <li><span class="text-red">02</span> 500 active creator communities</li>
-                    <li><span class="text-red">03</span> 2 million active community members</li>
-                    <li><span class="text-red">04</span> More marketing and promotion</li>
-                </ul>
+                <p>&copy; 2021 Tokners. All rights reserved.</p>
             </div>
         </div>
-    </div>
-</section>
-
-<section class="coming">
-    <div class="wrap coming-row">
-        <div class="coming-panel">
-            <h2><img src="assets/logo_colored_sign_black_text.svg" alt="Tokners logo" class="inline-logo"> is coming</h2>
-            <p class="muted">Cryptocurrency adoption is at less than 1% of the global world population with some countries and entities actively fighting against its mass adoption and the smartest developers and nerds holding the fort.</p>
-            <p class="muted">Bitcoin was the first, and it has since grown to thousands of tokens launched all aiming to fix one problem or the other with some quite simply FOMOing the moment. Our goal is to bring mass adoption to the cryptocurrency space by dumbing it down. How far down? So down that even a celebrity can explain it in simple words to their flowers and have them download an app, buy into the social currency of their favourite person and watch their investment as is with other cryptocurrency project.</p>
-            <p class="muted"><strong>A new digital economy is coming.</strong> People would be just as powerful as countries and creators would be paid beyond the peanuts that conventional social media platforms can offer.</p>
-            <p class="muted">There would be new markets and advertisers with little to offer would not find home there. Like Kanye said,</p>
-            <p class="quote">"Personalities would become the new currency, and services would be built on top of them".</p>
-            <p class="muted">Well, Kanye didn't exactly say that, but it sounds like something we hope he would say.</p>
-            <p class="muted">Currency is digital, it has been that way for a while now, but this time there would be no dead presidents on the money, there would people like you on the money, and you would own it because it would make the most sense in the world.</p>
-            <a href="#" class="btn btn-primary">Read More</a>
-        </div>
-        <div class="coming-img">
-            <img src="assets/Woman-Holding-iPhone-Xs-in-Hand.png" alt="">
-        </div>
-    </div>
-</section>
-
-<section class="presale">
-    <div class="wavy-mask-logo"><img src="assets/maskLogoGroup1.png" alt=""></div>
-    <div class="wrap">
-        <h2 class="center">Presale Details</h2>
-        <div class="phase-grid">
-            <div class="phase">
-                <span class="badge badge-green">01</span>
-                <h3>Phase One</h3>
-                <p class="muted-dark">0/04/2021 - 16/04/2021</p>
-                <p class="rate">1 BNB = 100000 WNTR</p>
-                <p class="muted-dark">Soft cap: 5000 BNB</p>
-                <p class="muted-dark">Hard cap: 10000 BNB</p>
-            </div>
-            <div class="phase">
-                <span class="badge badge-blue">02</span>
-                <h3>Phase Two</h3>
-                <p class="muted-dark">0/04/2021 - 16/04/2021</p>
-                <p class="rate">1 BNB = 100000 WNTR</p>
-                <p class="muted-dark">Soft cap: 5000 BNB</p>
-                <p class="muted-dark">Hard cap: 10000 BNB</p>
-            </div>
-            <div class="phase">
-                <span class="badge badge-yellow">03</span>
-                <h3>Phase Three</h3>
-                <p class="muted-dark">0/04/2021 - 16/04/2021</p>
-                <p class="rate">1 BNB = 100000 WNTR</p>
-                <p class="muted-dark">Soft cap: 5000 BNB</p>
-                <p class="muted-dark">Hard cap: 10000 BNB</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="wrap howtobuy">
-        <h2 class="center">How to buy</h2>
-        <div class="steps-grid">
-            <div class="step">
-                <span class="muted">01</span>
-                <p>First Connect your Metamask or TrustWallet to the "Connect Wallet" on the Homepage.</p>
-            </div>
-            <div class="arrow">&rarr;</div>
-            <div class="step">
-                <span class="muted">02</span>
-                <p>Then send minimum of 0.1 BNB or maximum of 10 BNB to the Presale wallet.</p>
-            </div>
-            <div class="arrow">&rarr;</div>
-            <div class="step">
-                <span class="muted">03</span>
-                <p>Then after you will receive your $WNTR to your address within 24hours.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<footer class="footer">
-    <div class="wrap">
-        <nav class="footer-nav">
-            <a href="#">Our team</a>
-            /
-            <a href="#">Tokens</a>
-            /
-            <a href="#">Connect wallet</a>
-            /
-            <a href="#">Lightpaper</a>
-        </nav>
-        <div class="footer-bottom">
-            <a href="#" class="logo">
-                <img src="assets/logo_colored_sign_black_text.svg" alt="">
-            </a>
-            <ul class="socials">
-                <li><a href="https://www.facebook.com"><img src="assets/twitterLogo.png" alt="Twitter Logo white colour Bird"></a></li>
-                <li><a href="https://t.me"><img src="assets/telegramLogo.png" alt="Telegram white logo"></a></li>
-                <li><a href="https://www.instagram.com"><img src="assets/instagramLogo.png" alt="Instagram logo white"></a></li>
-                <li><a href="https://github.com"><img src="assets/github.png" alt="GitHub logo white"></a></li>
-                <li><a href="https://www.reddit.com"><img src="assets/redditLogo.png" alt="Reddit logo white"></a></li>
-            </ul>
-            <p >&copy; 2021 Tokners. All rights reserved.</p>
-        </div>
-    </div>
-</footer>
+    </footer>
+</div>
 
 </body>
 </html>
