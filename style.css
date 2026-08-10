@@ -7,7 +7,6 @@ body {
     background: #0a0d16;
     color: #ffffff;
     font-family: 'Century Gothic', 'Trebuchet MS', sans-serif;
-    line-height: 1.6;
 }
 
 img {
@@ -20,14 +19,8 @@ a {
     text-decoration: none;
 }
 
-h1, h2, h3 {
-    margin: 0 0 16px 0;
-    line-height: 1.25;
-}
 
-p {
-    margin: 0 0 16px 0;
-}
+
 
 ul {
     margin: 0;
@@ -37,7 +30,6 @@ ul {
 
 .wrap {
     width: 100%;
-    max-width: 1140px;
     margin: 0 auto;
     padding: 0 24px;
 }
@@ -47,13 +39,18 @@ ul {
 }
 
 .muted-dark {
-    color: #6b7280;
+    color: black;
 }
 
-.eyebrow {
-    color: #2ecc71;
-    font-weight: bold;
+.eyebrow {font-weight: bold;
     font-size: 14px;
+}
+.learn-more{
+    background:#2ecc71;
+    color: #fff;
+    border-radius: 1rem;
+    border:none;
+    padding: 10px 20px;
 }
 
 .text-green { color: #2ecc71; }
@@ -105,10 +102,9 @@ ul {
 .badge-yellow { background: #f5c518; color: #3a2c00; }
 .badge-red { background: #e0393e; }
 
-/* Header */
 
 .header {
-    border-bottom: 1px solid rgba(255,255,255,0.06);
+
     padding: 20px 0;
 }
 
@@ -132,10 +128,13 @@ ul {
     font-size: 14px;
 }
 
-.header-actions {
+.signin-signup {
     display: flex;
     align-items: center;
     gap: 16px;
+}
+.signup-button{
+
 }
 
 .link-plain {
@@ -143,7 +142,6 @@ ul {
     font-size: 14px;
 }
 
-/* Hero */
 
 .hero {
     padding: 80px 0;
@@ -164,16 +162,20 @@ ul {
     font-size: 36px;
 }
 
-.hero-img {
-    width: 45%;
+.hero-phone-img {
+    width: 60%;
 }
 
-/* Info cards */
 
 .cards {
     padding: 20px 0 80px 0;
 }
-
+.grid-item-2{
+    padding-top:4rem;
+}
+.grid-item-1{
+    padding-top:2rem;
+}
 .cards-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -191,44 +193,42 @@ ul {
     margin-bottom: 20px;
 }
 
-/* Different section */
 
 .different {
-    background: #ffffff;
-    color: #1a1d29;
+    text-align: right;
+    color: black;
     border-radius: 32px 32px 0 0;
-    padding-top: 40px;
+    padding: 4rem 0;
+    overflow:hidden;
+    height:contain;
+
 }
 
 .different-row {
-    display: flex;
+   display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    width: 100%;
     align-items: center;
-    justify-content: space-between;
-    gap: 48px;
-    padding: 60px 0;
 }
 
-.different-img {
-    width: 40%;
-}
-
-.different-text {
-    max-width: 460px;
-}
-
-.different-text h2 {
-    font-size: 30px;
-}
-
-.different-text .lead {
-    font-weight: bold;
-}
-
-/* Roadmap */
 
 .roadmap {
-    background: #0d1119;
-    padding: 60px 0;
+    position: relative;
+    width: 100%;
+}
+
+.side-white-corner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.side-white-corner img {
+    display: block;
+    height: auto;
 }
 
 .roadmap-grid {
@@ -255,7 +255,6 @@ ul {
     margin-right: 8px;
 }
 
-/* Coming section */
 
 .coming {
     padding: 80px 0;
@@ -305,7 +304,6 @@ ul {
     border-radius: 16px;
 }
 
-/* Presale */
 
 .presale {
     padding: 60px 0;
@@ -362,7 +360,6 @@ ul {
     text-align: center;
 }
 
-/* Footer */
 
 .footer {
     background: #0d1119;
@@ -374,14 +371,18 @@ ul {
     justify-content: center;
     gap: 32px;
     margin-bottom: 40px;
+    color: #9aa1b4;
 }
 
 .footer-nav a {
-    color: #9aa1b4;
     font-size: 14px;
     text-transform: uppercase;
+    color:white;
+    text-decoration: underline;
 }
-
+.signup{
+    border: 2px solid #22A75D;
+}
 .footer-bottom {
     display: flex;
     align-items: center;
@@ -409,23 +410,53 @@ ul {
     justify-content: center;
     font-size: 12px;
 }
+.bg-gradient-image{
+    width: 100vw;
+    max-height:100vh;
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    z-index:-1;
+    overflow: hidden;
+}
 
-/* Responsive */
+.signup-button{
+    width: 147px;
+    height: 48px;
+    opacity: 1;
+    top: 36px;
+    left: 1733px;
+    border-radius: 52px;
+    border: 2px solid #22A75D;
+    text-align: center;
 
+}
+.hero-phone-img{
+    right:0;
+    position: absolute;
+}
+.side-white-corner{
+    position:relative;
+    top:0;
+    right:0;
+    width:60px;
+    pointer-events: none;
+}
 @media (max-width: 900px) {
     .hero-row, .different-row, .coming-row {
         flex-direction: column;
         text-align: center;
     }
-    .hero-img, .different-img, .coming-img {
+    .hero-phone-img, .curved-colorful, .coming-img {
         width: 80%;
         margin: 0 auto;
     }
     .cards-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
     .roadmap-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
     .phase-grid {
         grid-template-columns: 1fr;
